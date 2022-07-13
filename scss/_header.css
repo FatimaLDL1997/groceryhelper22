@@ -1,0 +1,60 @@
+.header {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  background: #21B6A8;
+  box-shadow: -1px 11px 16px rgba(0, 0, 0, 0.25);
+  position: fixed;
+}
+
+.header__darkMode {
+  color: #f0eaea;
+  font-size: 38px;
+  position: absolute;
+  top: 2px;
+  left: 15PX;
+}
+
+@media screen and (max-width: 900px) {
+  .header__darkMode {
+    font-size: 27px;
+    left: 17PX;
+  }
+}
+
+.header__darkMode:hover {
+  transform: scale(0.8);
+}
+
+.header__title {
+  position: absolute;
+  display: flex;
+  font-family: 'Jacques Francois';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5vmax;
+  color: #FFFDFD;
+  font-family: 'Gentium Book Basic';
+}
+
+.header__title h4 {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  top: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    height: 58px;
+  }
+  .header__title {
+    top: 0px;
+    font-size: 3vmax;
+  }
+}

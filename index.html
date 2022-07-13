@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale= 1.0, user-scalable = 0">
+    <title>Grocery Helper</title>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    href="https://fonts.googleapis.com/css2?family=Comforter&family=Dancing+Script&family=Gentium+Book+Plus:ital@1&family=Jaldi&family=M+PLUS+Rounded+1c:wght@400;700&family=Neonderthaw&family=PT+Serif:wght@700&family=Podkova:wght@600&family=Quintessential&family=Rosario:wght@300&family=Ruda:wght@400;700&family=Sahitya&family=Yellowtail&display=swap"
+    />
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+<body class="body">
+    
+    <header class="header">
+        <div class="header__darkMode">
+            <i class="fas fa-solid fa-moon"></i>
+        </div>
+
+        <div class="header__title">
+            <h4>Grocery Helper</h4>
+        </div>
+            
+    </header>
+   
+
+    <section class="middle">
+        
+        <!-- <div class="middle__title">
+            <h4>Grocery Helper</h4>
+        </div> -->
+        <div class="modal__modalContainer">
+            <section class="modal"> 
+                <div class="modal__exit">
+                    <i class="fas fa-times-circle"></i>
+                </div>
+                <h2>Hello!</h2>
+                <h9>This is a tool that can help manage your expenses</h9>
+                <h4></h4>
+                <h9>Good luck saving money :)</h9>
+                <h4></h4>
+                <h9>Must hit 'Enter' after each input</h9>
+            </section>
+        </div>
+        
+        <!-- <div class="middle__editIns">Click Any List to Edit!</div> -->
+
+        <section class="center">
+            <div class="middle__btnAlign">
+                <div class="middle__lstBtns"></div>
+                <div class="middle__addList">
+                    <button class="middle__addListBtn">
+                        <h1>+</h1>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="middle__container">
+                    
+                <div class="middle__sections"> 
+                    <h3>Product</h3>
+                    <h3>Quantity</h3>
+                    <h3>Price</h3>
+                </div>
+                <div class="middle__content">
+    
+                </div>
+    
+                <div class="middle__plus">
+                    <h1>+</h1>
+                </div>
+                
+            </div>
+        </section>
+        
+        
+        <div class="middle__lowerContent">
+            
+            <div class="middle__alert"></div>
+
+            
+            <div class="middle__lowerBar">
+                <div class="middle__totalBox"></div>
+
+                <div class="middle__row">
+                    <button class="middle__instructions">?</button>
+            
+                    <button class="middle__save">Save</button>
+        
+                    <button class="middle__btnClr">Clear</button>
+        
+                    <button class="middle__delList">Clear All</button>
+                </div>
+            </div>
+            
+            <!-- <div class="middle__tableTitle">Previous Saved Data</div>
+            <div class="middle__array" ></div> -->
+
+        </div>
+        
+        
+    </section>
+
+</body>
+<script src="js/app.js" ></script>
+</html>

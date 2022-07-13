@@ -1,0 +1,701 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  width: 100%;
+  height: 69px;
+  background: #21B6A8;
+  -webkit-box-shadow: -1px 11px 16px rgba(0, 0, 0, 0.25);
+          box-shadow: -1px 11px 16px rgba(0, 0, 0, 0.25);
+  position: fixed;
+}
+
+.header__darkMode {
+  color: #f0eaea;
+  font-size: 38px;
+  position: absolute;
+  top: 8px;
+  left: 15PX;
+}
+
+@media screen and (max-width: 900px) {
+  .header__darkMode {
+    font-size: 27px;
+    left: 17PX;
+  }
+}
+
+.header__darkMode:hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.header__title {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Jacques Francois';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5vmax;
+  color: #FFFDFD;
+  font-family: 'Gentium Book Basic';
+}
+
+.header__title h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 12px;
+  top: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    height: 58px;
+  }
+  .header__title {
+    top: 0px;
+    font-size: 3vmax;
+  }
+}
+
+body {
+  background: #EBFFDC;
+  width: 100%;
+  height: 100%;
+  overflow-y: visible;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.darkBackground {
+  background: #005458;
+}
+
+.darkText {
+  color: #005458;
+}
+
+.lightText {
+  color: #dcfffc !important;
+}
+
+input {
+  text-align: center;
+  font-size: 9px;
+}
+
+.main-sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.modal {
+  text-align: center;
+  background: #a3ebb1;
+  position: relative;
+  border-style: hidden;
+  -webkit-filter: drop-shadow(10px 18px 7px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(10px 18px 7px rgba(0, 0, 0, 0.25));
+  margin: 90px;
+  padding: 9px;
+  font-size: 3vmax;
+  font-family: 'Gentium Book Basic';
+  border-radius: 17px;
+}
+
+.modal__modalContainer {
+  padding-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.modal__exit {
+  color: #189084;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 5vmin;
+}
+
+.modal__exit:hover {
+  color: #04332e;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.middle {
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  left: 0;
+  padding-top: 51px;
+}
+
+.middle__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  opacity: 1;
+}
+
+.middle__list h3 {
+  text-align: center;
+}
+
+.middle__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5px;
+}
+
+.middle__column h3 {
+  font-size: 2vmin;
+  text-decoration: underline;
+}
+
+.middle__title h4 {
+  text-align: center;
+  font-size: 6vmin;
+}
+
+.middle__container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+}
+
+.middle__btnContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.middle__product {
+  position: relative;
+  width: 23vmax;
+  height: 3vmax;
+  color: black;
+  background: #FFFFFF;
+  border: 0.3vmax solid #45b4a9;
+  -webkit-box-shadow: 0px 4px 4px #7be0dcb4, inset 10px 30px 12px #67aea635;
+          box-shadow: 0px 4px 4px #7be0dcb4, inset 10px 30px 12px #67aea635;
+  border-radius: 2vmax;
+  font-size: 2vmax;
+  font-family: 'Gentium Book Basic';
+  font-weight: bolder;
+}
+
+.middle__product:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 900px) {
+  .middle__product {
+    width: 18vmax;
+    font-size: 3vmax;
+  }
+}
+
+.middle__price, .middle__quantity {
+  position: relative;
+  width: 12vmax;
+  height: 3vmax;
+  background: #FFFFFF;
+  border: 0.3vmax solid #21B6A8;
+  -webkit-box-shadow: 0px 4px 4px #7be0dcb4, inset 10px 30px 12px #67aea635;
+          box-shadow: 0px 4px 4px #7be0dcb4, inset 10px 30px 12px #67aea635;
+  border-radius: 2vmax;
+  font-size: 2vmax;
+  font-family: 'Gentium Book Basic';
+}
+
+.middle__price:focus, .middle__quantity:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 900px) {
+  .middle__price, .middle__quantity {
+    width: 10vmax;
+    font-size: 2.5vmax;
+  }
+}
+
+.middle__lstBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.middle__addListBtn {
+  margin-top: 18px;
+  width: 3vmax;
+  height: 4vmax;
+  margin-left: 7px;
+  border-radius: 1.5vmax;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(41.15%, rgba(2, 118, 107, 0.67)), color-stop(87.5%, rgba(163, 235, 177, 0.67)));
+  background: linear-gradient(180deg, rgba(2, 118, 107, 0.67) 41.15%, rgba(163, 235, 177, 0.67) 87.5%);
+  border-style: none;
+  color: black;
+}
+
+.middle__addListBtn h1 {
+  margin: 0;
+  font-size: 2vmax;
+}
+
+@media screen and (max-width: 900px) {
+  .middle__addListBtn {
+    width: 5vmax;
+    height: 4vmax;
+    border-radius: 3vmax;
+  }
+  .middle__addListBtn h1 {
+    font-size: 3vmax;
+  }
+}
+
+.middle__btnAlign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 25px;
+  padding-top: 35px;
+}
+
+.middle__sections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3vmax;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 182, 168, 0.68)), to(rgba(163, 235, 177, 0.68)));
+  background: linear-gradient(180deg, rgba(33, 182, 168, 0.68) 0%, rgba(163, 235, 177, 0.68) 100%);
+  border-radius: 16px;
+  margin: 10px;
+}
+
+.middle__sections h3 {
+  font-size: 2.5vmax;
+  padding: 5px;
+  padding-left: 4vmax;
+  padding-right: 4vmax;
+  font-family: 'Gentium Book Basic';
+}
+
+@media screen and (max-width: 900px) {
+  .middle__sections h3 {
+    padding-left: 2.5vmax;
+    padding-right: 2.5vmax;
+  }
+}
+
+.middle__content {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 1;
+}
+
+.middle__listContent {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+
+.middle__lstBtn {
+  margin-top: 18px;
+  width: 9vmax;
+  height: 4vmax;
+  font-size: 2vmax;
+  border-radius: 3vmax;
+  margin-left: 5px;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, left bottom, from(#21b6a8ab), color-stop(95.83%, #21b6a859));
+  background: linear-gradient(180deg, #21b6a8ab 0%, #21b6a859 95.83%);
+  border-style: none;
+  font-family: 'Gentium Book Basic';
+  color: black;
+}
+
+@media screen and (max-width: 900px) {
+  .middle__lstBtn {
+    width: 11vmax;
+    font-size: 2vmax;
+    height: 4vmax;
+  }
+}
+
+.middle__del {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3vmax;
+  color: #21B6A8;
+}
+
+.middle__del:hover {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  color: #073530;
+}
+
+@media screen and (max-width: 900px) {
+  .middle__del {
+    font-size: 3vmax;
+  }
+}
+
+.middle__editIns {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  font-weight: bold;
+  color: #0e9588;
+  font-family: fangsong;
+}
+
+.middle__alert {
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  color: #331212;
+  border: black;
+  margin: 20px;
+  display: none;
+  font-weight: bold;
+  font-family: 'Gentium Book Basic';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.middle__plus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 4vmax;
+  height: 3vmax;
+  border-radius: 2vmax;
+  margin: 10px;
+  background: rgba(2, 118, 107, 0.67);
+  border-style: none;
+  color: white;
+}
+
+.middle__plus h1 {
+  font-size: 3vmax;
+}
+
+@media screen and (max-width: 900px) {
+  .middle__plus {
+    margin: 18px;
+  }
+}
+
+.middle__totalValue {
+  display: block;
+  padding-right: 20px;
+}
+
+.middle__total {
+  display: block;
+  padding-left: 20px;
+}
+
+.middle__totalBox {
+  height: 3vmax;
+  background: -webkit-gradient(linear, left top, left bottom, from(#21b6a8), to(#a3ebb1));
+  background: linear-gradient(180deg, #21b6a8 0%, #a3ebb1 100%);
+  border-radius: 16px;
+  width: 100%;
+  margin-top: 18px;
+  margin-bottom: 1vmax;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'Gentium Book Basic';
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.middle__totalBox h2, .middle__totalBox h1 {
+  margin: 0px;
+  font-size: 2vmax;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+@media screen and (max-width: 900px) {
+  .middle__totalBox {
+    margin-bottom: 1.5vmax;
+  }
+  .middle__totalBox h2, .middle__totalBox h1 {
+    font-size: 2.5vmax;
+  }
+}
+
+.middle__instructions {
+  font-family: 'Gentium Book Basic';
+  width: 3vmax;
+  height: 3vmax;
+  border-style: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#A3EBB1), to(rgba(163, 235, 177, 0)));
+  background: linear-gradient(180deg, #A3EBB1 0%, rgba(163, 235, 177, 0) 100%);
+  border-radius: 1vmax;
+  font-size: 2vmax;
+  font-weight: bold;
+  color: black;
+  -webkit-filter: drop-shadow(8px 16px 15px rgba(0, 0, 0, 0.442));
+          filter: drop-shadow(8px 16px 15px rgba(0, 0, 0, 0.442));
+}
+
+.middle__instructions:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+@media screen and (max-width: 900px) {
+  .middle__instructions {
+    width: 12vmax;
+    height: 4vmax;
+    border-radius: 3vmax;
+  }
+}
+
+.middle__save {
+  font-family: 'Gentium Book Basic';
+  width: 10vmax;
+  height: 3vmax;
+  border-style: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#A3EBB1), to(rgba(163, 235, 177, 0)));
+  background: linear-gradient(180deg, #A3EBB1 0%, rgba(163, 235, 177, 0) 100%);
+  border-radius: 1vmax;
+  font-size: 2vmax;
+  font-weight: bold;
+  color: black;
+  -webkit-filter: drop-shadow(8px 16px 15px rgba(0, 0, 0, 0.442));
+          filter: drop-shadow(8px 16px 15px rgba(0, 0, 0, 0.442));
+}
+
+.middle__save:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+@media screen and (max-width: 900px) {
+  .middle__save {
+    width: 12vmax;
+    height: 4vmax;
+    border-radius: 3vmax;
+  }
+}
+
+.middle__btnClr {
+  font-family: 'Gentium Book Basic';
+  width: 12vmax;
+  height: 3vmax;
+  border-style: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#A3EBB1), to(rgba(163, 235, 177, 0)));
+  background: linear-gradient(180deg, #A3EBB1 0%, rgba(163, 235, 177, 0) 100%);
+  border-radius: 1vmax;
+  font-size: 2vmax;
+  font-weight: bold;
+  color: black;
+  -webkit-filter: drop-shadow(8px 16px 15px rgba(0, 0, 0, 0.442));
+          filter: drop-shadow(8px 16px 15px rgba(0, 0, 0, 0.442));
+}
+
+.middle__btnClr:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+@media screen and (max-width: 900px) {
+  .middle__btnClr {
+    width: 12vmax;
+    height: 4vmax;
+    border-radius: 3vmax;
+  }
+}
+
+.middle__delList {
+  font-family: 'Gentium Book Basic';
+  width: 12vmax;
+  height: 3vmax;
+  border-style: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#A3EBB1), to(rgba(163, 235, 177, 0)));
+  background: linear-gradient(180deg, #A3EBB1 0%, rgba(163, 235, 177, 0) 100%);
+  border-radius: 1vmax;
+  font-size: 2vmax;
+  font-weight: bold;
+  color: black;
+  -webkit-filter: drop-shadow(8px 16px 15px rgba(0, 0, 0, 0.442));
+          filter: drop-shadow(8px 16px 15px rgba(0, 0, 0, 0.442));
+}
+
+.middle__delList:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+@media screen and (max-width: 900px) {
+  .middle__delList {
+    width: 20 vmax;
+    height: 4vmax;
+    border-radius: 3vmax;
+  }
+}
+
+.middle__row {
+  background: #21B6A8;
+  padding-top: 0.5vmax;
+  padding-bottom: 0.5vmax;
+  height: 3vmax;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 900px) {
+  .middle__row {
+    padding-top: 1.5vmax;
+    padding-bottom: 1.5vmax;
+    height: 4vmax;
+  }
+}
+
+.middle__lowerBar {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 0px;
+}
+
+.middle__increase {
+  border: none;
+  background: none;
+  position: static;
+  font-size: 4vmin;
+  margin-top: -22px;
+}
+
+.middle__decrease {
+  border: none;
+  background: none;
+  position: static;
+  font-size: 4vmin;
+  margin-top: -22px;
+}
+/*# sourceMappingURL=style.css.map */
